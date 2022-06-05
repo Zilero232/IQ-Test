@@ -1,0 +1,7 @@
+<template>
+    <section class="profile">
+        <div class="container">
+            
+        </div>
+    </section>
+</template>
