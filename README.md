@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # iq-test
 
 ## Project setup
@@ -22,3 +23,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# IQ-Test
+>>>>>>> beddeaa15d10febe5935286af33f57f9c1cbe695
