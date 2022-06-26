@@ -1,23 +1,24 @@
 <template>
-  <div id="app">
-    <Header />
-
-    <div class="main">
-      <router-view />
-    </div>
-
-    <Footer />
-  </div>
+  <component :is="layout">
+    <router-view></router-view>
+  </component>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Footer from "./components/Footer.vue";
+import DefaultLayout from "./layouts/DefaultLayout.vue";
+import AuthLayout from "./layouts/AuthLayout.vue";
 
 export default {
+  computed: {
+    layout() {
+      return this.$route.meta.layout === "Auth"
+        ? "AuthLayout"
+        : "DefaultLayout";
+    },
+  },
   components: {
-    Header,
-    Footer,
+    DefaultLayout,
+    AuthLayout,
   },
 };
 </script>

@@ -57,8 +57,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-.menu__right {
-  display: none;
+.login .container{
+  max-width: 600px;
 }
 .header .ul {
   display: -webkit-box;
@@ -1003,6 +1003,16 @@ li {
   bottom: 0;
   background: #e0e0e0;
   z-index: 9999;
+}
+
+
+nav {
+  box-shadow: none !important;
+  height: none !important;
+  background: none !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end !important;
 }
 
 .resuls {

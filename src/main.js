@@ -9,6 +9,10 @@ Vue.use(VueAwesomeSwiper);
 
 import firebase from "firebase/app";
 import "firebase/database";
+import "firebase/auth";
+
+import 'materialize-css';
+import 'materialize-css/dist/css/materialize.css'
 
 firebase.initializeApp({
   apiKey: "AIzaSyB-3KRRhEmvDw3ioJ6DvBUamEPd9OwLVsA",

@@ -3,7 +3,7 @@
     <div class="container">
       <h2 class="resuls__title">
         Ваш IQ:
-        {{ ((correctAnswers < 15 ? 16 : correctAnswers + 4) / 20) * 100 }}
+        {{ (( correctAnswers < 10 ? 16 : correctAnswers + 4) / 20) * 100 }}
       </h2>
       <h3 class="resuls__import" v-if="timer < 2">
         <span>Важно!</span> Ваш результат может быть таким, потому что вы

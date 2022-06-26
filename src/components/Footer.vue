@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <ul class="footer__spisok">
+      <ul class="footer__spisok" v-if="!auth">
         <li class="menu__list"><a href="/">Главная</a></li>
         <li class="menu__list"><a href="/about">Описание</a></li>
         <li class="menu__list"><a href="/profile">Личный кабинет</a></li>
@@ -12,3 +12,10 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  props: ["auth"],
+  name: "Footer",
+};
+</script>
